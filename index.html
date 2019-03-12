@@ -21,10 +21,15 @@
 	<div id="wrapper">
 		<!-- header -s -->
 		<header id="headerwrap"> <!-- w100% -->
-			<div class="videowrap">
-				<video autoplay loop muted class="videobg">
-					<source src="images/code.mp4" type="video/mp4">
-				</video>
+			<div class="main_visual">
+				<span class="visual1 rellax" data-rellax-speed="-1"></span>
+				<span class="visual2 rellax" data-rellax-speed="-5"></span>
+				<span class="visual3 rellax" data-rellax-speed="-9"></span>
+				<span class="visual4 rellax" data-rellax-speed="2"></span>
+				<span class="visual5 rellax" data-rellax-speed="-7"></span>
+				<span class="visual6 rellax" data-rellax-speed="5"></span>
+				<span class="visual7 rellax" data-rellax-speed="-2"></span>
+				<span class="visual8 rellax" data-rellax-speed="3"></span>
 			</div>
 			<div class="header"> <!-- w1600 -->
 				<nav id="nav"> <!-- w1600 -->
@@ -35,8 +40,8 @@
 						<span class="txt1 rellax" data-rellax-speed="-1">P</span><span class="txt2 rellax" data-rellax-speed="-2">o</span><span class="txt3 rellax" data-rellax-speed="-3">r</span><span class="txt4 rellax" data-rellax-speed="-4">t</span><span class="txt5 rellax" data-rellax-speed="-5">F</span><span class="txt6 rellax" data-rellax-speed="-6">o</span><span class="txt7 rellax" data-rellax-speed="-7">l</span><span class="txt8 rellax" data-rellax-speed="-8">i</span><span class="txt9 rellax" data-rellax-speed="-9">o</span>
 					</h2>
 					<p>안녕하세요! 작업 공간에 온 걸 환영합니다.</p>
-					<span class="arrow"><i class="fas fa-arrow-down"></i></span>
 				</div>
+				<span class="arrow"><i class="fas fa-arrow-down"></i></span>
 			</div>
 		</header>
 		<!-- header -e -->
@@ -153,7 +158,7 @@
 					<div class="work_title">
 						<h3 class="pacifico rellax" data-rellax-speed="7">“Project”</h3> <!-- w340px -->
 					</div>
-					<div class="project clearfix rellax" data-rellax-speed="3">
+					<div class="project clearfix">
 						<div class="proimg proimg1"> <!-- w800px -->
 							<div class="proimg_move move1"></div> <!-- w351px -->
 						</div> 
@@ -187,7 +192,7 @@
 							</span>
 						</div> 
 					</div>
-					<div class="project clearfix rellax" data-rellax-speed="-2">
+					<div class="project clearfix">
 						<div class="proimg proimg2"> <!-- w800px -->
 							<div class="proimg_move move2"></div> <!-- w351px -->
 						</div> 
@@ -220,7 +225,7 @@
 							</span>
 						</div> 
 					</div>
-					<div class="project clearfix rellax" data-rellax-speed="4">
+					<div class="project clearfix">
 						<div class="proimg proimg3"></div>  <!-- w800px -->
 						<div class="protxt"> <!-- w800px -->
 							<h4>부산국제영화제 리뉴얼</h4>
@@ -247,7 +252,7 @@
 							</span>
 						</div> 
 					</div>
-					<div class="project clearfix rellax" data-rellax-speed="-2">
+					<div class="project clearfix">
 						<div class="proimg proimg4"> <!-- w800px -->
 							<div class="proimg_move move4"></div> <!-- w351px -->
 						</div> 
@@ -293,12 +298,11 @@
 		</footer>
 		<!-- footer -e -->
 	</div>
-    <script>
-    	var rellax = new Rellax('.rellax',{
+	<script>
+		var rellax = new Rellax('.rellax',{
 			center: true,
-			callback: function(position){
-			}
-    	});
-    </script>
+			callback: function(position){}
+		});
+	</script>
 </body>
 </html>

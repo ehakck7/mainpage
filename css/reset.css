@@ -26,5 +26,5 @@ a:hover, a:active, a:focus{text-decoration: underline; color: #333;}
 
 /* font 설정 */
 body, input{font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size: 18px; color: #333;}
-.title h2{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; font-size: 96px; color: #e88f0c;}
+.title h2{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; font-size: 96px; color: #fff;}
 .pacifico, .footer_title{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; text-align: center; font-size: 72px;}
