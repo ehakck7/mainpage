@@ -9,6 +9,8 @@ img, fieldset{border: none;}
 h1, h2, h3, h4, h5, h6, strong{font-weight: normal;}
 address{font-style: normal;}
 input, img, i{vertical-align: middle;}
+button{-webkit-appearance: none; appearance: none; padding: 0; border:0; text-transform: none; cursor:pointer;}
+button > span{position: relative;}
 
 a:link, a:visited{text-decoration: none; color: #333;}
 a:hover, a:active, a:focus{text-decoration: underline; color: #333;} 
@@ -24,7 +26,6 @@ a:hover, a:active, a:focus{text-decoration: underline; color: #333;}
 /* clearfix */
 .clearfix:after{content: ''; display: block; clear: both;}
 
-/* font 설정 */
-body, input{font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size: 18px; color: #333;}
-.title h2{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; font-size: 96px; color: #fff;}
-.pacifico, .footer_title{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; text-align: center; font-size: 72px;}
+/* font */
+html, body, input{font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size: 16px; color: #333;}
+.pacifico{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif;}
