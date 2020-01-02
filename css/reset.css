@@ -2,13 +2,15 @@
 
 /* reset */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Pacifico&subset=korean');
-body, header, footer, section, nav, article, a, div, h1, h2, h3, h4, ul, li, dl, dt, dd, p, form, fieldset, legend, label, input, span, img, strong, video, address, i{margin: 0; padding: 0; box-sizing: border-box;}
-header, footer, article, section, nav{display: block;}
+body, header, footer, section, nav, article, main, a, div, h1, h2, h3, h4, ul, li, dl, dt, dd, p, form, fieldset, legend, label, input, span, img, strong, video, address, i{margin: 0; padding: 0; box-sizing: border-box;}
+header, footer, article, section, nav, main{display: block;}
 ul, ol, dl{list-style: none;}
 img, fieldset{border: none;}
-h1, h2, h3, h4, h5, h6, strong{font-weight: normal;}
+h1, h2, h3, h4, h5, h6{font-weight: normal;}
 address{font-style: normal;}
 input, img, i{vertical-align: middle;}
+button{-webkit-appearance: none; appearance: none; padding: 0; border:0; text-transform: none; cursor:pointer;}
+button > span{position: relative;}
 
 a:link, a:visited{text-decoration: none; color: #333;}
 a:hover, a:active, a:focus{text-decoration: underline; color: #333;} 
@@ -23,8 +25,3 @@ a:hover, a:active, a:focus{text-decoration: underline; color: #333;}
 
 /* clearfix */
 .clearfix:after{content: ''; display: block; clear: both;}
-
-/* font 설정 */
-body, input{font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size: 18px; color: #333;}
-.title h2{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; font-size: 96px; color: #fff;}
-.pacifico, .footer_title{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; text-align: center; font-size: 72px;}
