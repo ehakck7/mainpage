@@ -3,7 +3,7 @@
 
 /* font */
 body, input{font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size: 16px; color: #333;}
-.title{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif;}
+.tit{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif;}
 
 /* common 공통 */
 .wrap{min-width: 640px;}

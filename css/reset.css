@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Pacifico&subset=korean');
 body, header, footer, section, nav, article, main, a, div, h1, h2, h3, h4, ul, li, dl, dt, dd, p, form, fieldset, legend, label, input, span, img, strong, video, address, i{margin: 0; padding: 0; box-sizing: border-box;}
 header, footer, article, section, nav, main{display: block;}
-ul, ol, dl{list-style: none;}
+ul, ol, dl, li{list-style: none;}
 img, fieldset{border: none;}
 h1, h2, h3, h4, h5, h6{font-weight: normal;}
 address{font-style: normal;}
