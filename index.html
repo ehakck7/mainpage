@@ -68,6 +68,7 @@
 						</p>
 					</div>
 				</div>
+				<!-- jquery animate참고 -->
 				<div class="bg-eff-box">
 					<span class="bg-eff-circle bg-eff-circle-01"></span>
 					<span class="bg-eff-circle bg-eff-circle-02"></span>
@@ -157,7 +158,7 @@
 						<span class="bg-eff-line"></span>
 					</div>
 					<ul class="project-list">
-						<li class="gangdong">
+						<li class="gangdong" data-project-img="project-01">
 							<article class="project-box clearfix">
 								<div class="project-img f-left"></div>
 								<div class="project-info f-right">
@@ -178,7 +179,10 @@
 											<a href="https://function-dh.github.io/gangdong/subpage4.html" title="강동 보건소 서브 페이지4 이동" target="_blank">sub4</a>
 										</dd> 
 										<dt>Color</dt>
-										<dd class="site-color"><span class="color-01"></span>#ff9000, <span class="color-02"></span>#fca330</dd> 
+										<dd class="site-color">
+											<span class="color-01" data-pr-color="ff9000"></span>#ff9000,
+											<span class="color-02" data-pr-color="fca330"></span>#fca330
+										</dd> 
 									</dl>
 									<ul class="site-feature">
 										<li><i class="fas fa-check-circle"></i>웹 접근성과 크로스 브라우징(IE7) 중점</li>
@@ -198,11 +202,11 @@
 			<div class="personal-project">
 				<div class="inner">
 					<div class="tit-box">
-						<h2 class="tit">"Project"</h2>
+						<h2 class="tit">"Personal Project"</h2>
 						<span class="bg-eff-line"></span>
 					</div>
 					<ul class="project-list">
-						<li class="gangdong">
+						<li class="gangdong" data-project-img="project-01">
 							<article class="project-box clearfix">
 								<div class="project-img f-left"></div>
 								<div class="project-info f-right">
@@ -223,7 +227,10 @@
 											<a href="https://function-dh.github.io/gangdong/subpage4.html" title="강동 보건소 서브 페이지4 이동" target="_blank">sub4</a>
 										</dd> 
 										<dt>Color</dt>
-										<dd class="site-color"><span class="color-01"></span>#ff9000, <span class="color-02"></span>#fca330</dd> 
+										<dd class="site-color">
+											<span class="color-01" data-pr-color="ff9000"></span>#ff9000,
+											<span class="color-02" data-pr-color="fca330"></span>#fca330
+										</dd> 
 									</dl>
 									<ul class="site-feature">
 										<li><i class="fas fa-check-circle"></i>웹 접근성과 크로스 브라우징(IE7) 중점</li>
@@ -232,6 +239,107 @@
 									<span class="site-btn">
 										<a href="https://function-dh.github.io/gangdong" class="viewsite" title="강동 보건소 메인 페이지로 이동" target="_blank">View Site</a>
 										<a href="https://github.com/function-dh/gangdong" class="viewcode" title="강동 보건소 git hub로 이동" target="_blank">View Code</a>
+									</span>
+								</div>
+							</article>
+						</li>
+						<li class="hershey" data-project-img="project-02">
+							<article class="project-box clearfix">
+								<div class="project-img f-left"></div>
+								<div class="project-info f-right">
+									<h3 class="project-tit">허쉬 사이트 리뉴얼</h3>
+									<dl class="site-info clearfix">
+										<dt>Site Type</dt> 
+										<dd>PC사이트(HTML5, CSS3)</dd>
+										<dt>Cross Browsing</dt>
+										<dd>IE10+</dd> 
+										<dt>Work</dt>
+										<dd>디자인 100%, 퍼블리싱 100%, 제이쿼리 100%</dd> 
+										<dt>Page Composition</dt>
+										<dd class="site-link">
+											<a href="https://function-dh.github.io/hershey" title="허쉬 메인 페이지로 이동" target="_blank">Main Page</a>, 
+											<a href="https://function-dh.github.io/hershey/subpage1.html" title="허쉬 서브 페이지로 이동" target="_blank">sub1</a>, 
+											<a href="https://function-dh.github.io/hershey/subpage2.html" title="허쉬 서브 페이지로 이동" target="_blank">sub2</a>
+										</dd> 
+										<dt>Color</dt>
+										<dd class="site-color">
+											<span class="color-01" data-pr-color="391000"></span>#391000,
+											<span class="color-02" data-pr-color="feb62e"></span>#feb62e
+										</dd> 
+									</dl>
+									<ul class="site-feature">
+										<li><i class="fas fa-check-circle"></i>CSS3와 jQuery를 이용한 비쥬얼 중심의 사이트</li>
+										<li><i class="fas fa-check-circle"></i>jQuery를 활용하여 상품 무한 슬라이드</li>
+										<li><i class="fas fa-check-circle"></i>Scroll 효과 적용하여 역동적으로 제작</li>
+									</ul>
+									<span class="site-btn">
+										<a href="https://function-dh.github.io/hershey" class="viewsite" title="허쉬 메인 페이지로 이동" target="_blank">View Site</a>
+										<a href="https://github.com/function-dh/hershey" class="viewcode" title="허쉬 git hub로 이동" target="_blank">View Code</a>
+									</span>
+								</div>
+							</article>
+						</li>
+						<li class="busan-mobile" data-project-img="project-03">
+							<article class="project-box clearfix">
+								<div class="project-img f-left"></div>
+								<div class="project-info f-right">
+									<h3 class="project-tit">부산국제영화제 리뉴얼</h3>
+									<dl class="site-info clearfix">
+										<dt>Site Type</dt> 
+										<dd>모바일 사이트</dd>
+										<dt>Work</dt>
+										<dd>디자인 100%, 퍼블리싱 100%, 제이쿼리 100%</dd> 
+										<dt>Page Composition</dt>
+										<dd class="site-link">
+											<a href="https://function-dh.github.io/Busanmobile/" title="부산 모바일 메인 페이지로 이동" target="_blank">Main Page</a>, 
+											<a href="https://function-dh.github.io/Busanmobile/subpage1.html" title="부산 모바일 서브 페이지로 이동" target="_blank">sub1</a>
+										</dd> 
+										<dt>Color</dt>
+										<dd class="site-color">
+											<span class="color-01" data-pr-color="d32234"></span>#d32234,
+											<span class="color-02" data-pr-color="1d1d1d"></span>#1d1d1d
+										</dd> 
+									</dl>
+									<ul class="site-feature">
+										<li><i class="fas fa-check-circle"></i>jQuery를 활용하여 햄버거 메뉴와 아코디언 메뉴 구현</li>
+										<li><i class="fas fa-check-circle"></i>bxslider를 활용한 슬라이드 메뉴</li>
+									</ul>
+									<span class="site-btn">
+										<a href="https://function-dh.github.io/Busanmobile/" class="viewsite" title="부산 모바일 메인 페이지로 이동" target="_blank">View Site</a>
+										<a href="https://github.com/function-dh/Busanmobile" class="viewcode" title="부산 모바일 git hub로 이동" target="_blank">View Code</a>
+									</span>
+								</div>
+							</article>
+						</li>
+						<li class="sknetworks" data-project-img="project-04">
+							<article class="project-box clearfix">
+								<div class="project-img f-left"></div>
+								<div class="project-info f-right">
+									<h3 class="project-tit">SK네트웍스 리뉴얼</h3>
+									<dl class="site-info clearfix">
+										<dt>Site Type</dt> 
+										<dd>반응형 사이트</dd>
+										<dt>Cross Browsing</dt>
+										<dd>IE10+</dd> 
+										<dt>Work</dt>
+										<dd>디자인 100%, 퍼블리싱 100%, 제이쿼리 100%</dd> 
+										<dt>Page Composition</dt>
+										<dd class="site-link">
+											<a href="https://function-dh.github.io/SKnetworks" title="sk네트워크 메인 페이지로 이동" target="_blank">Main Page</a> 
+										</dd> 
+										<dt>Color</dt>
+										<dd class="site-color">
+											<span class="color-01" data-pr-color="ff646e"></span>#ff646e,
+											<span class="color-02" data-pr-color="0e2980"></span>#0e2980
+										</dd> 
+									</dl>
+									<ul class="site-feature">
+										<li><i class="fas fa-check-circle"></i>모든 해상도를 지원하는 반응형 사이트</li>
+										<li><i class="fas fa-check-circle"></i>스크린 사이즈에 따라 반응하는 동영상</li>
+									</ul>
+									<span class="site-btn">
+										<a href="https://function-dh.github.io/SKnetworks" class="viewsite" title="sk네트워크 메인 페이지로 이동" target="_blank">View Site</a>
+										<a href="https://github.com/function-dh/SKnetworks" class="viewcode" title="sk네트워크 git hub로 이동" target="_blank">View Code</a>
 									</span>
 								</div>
 							</article>

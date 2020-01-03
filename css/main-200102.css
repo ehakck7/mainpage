@@ -1,20 +1,26 @@
 @charset "UTF-8";
 @import url(reset.css);
-
 /* font */
-body, input{font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size: 16px; color: #333;}
-.tit{font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif;}
+html, body, input {
+  font-family: 'Noto Sans KR', '돋움', dotum, sans-serif;
+  font-size: 62.5%;
+  color: #333; }
 
 /* common 공통 */
-.wrap{min-width: 640px;}
-.wrap .inner{max-width: 1920px; margin:0 auto;}
-.f-left{float: left;}
-.f-right{float:right;}
+.wrap {
+  min-width: 640px;
+  font-size: 1.6rem;
+  /* color */ }
 
-/* 
-	color
-	메인 컬러: #e88f0c(주황)
-	보조 컬러: #92ceea(파랑)
-*/
+.wrap .inner {
+  max-width: 1920px;
+  margin: 0 auto; }
 
+.tit {
+  font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; }
 
+.f-left {
+  float: left; }
+
+.f-right {
+  float: right; }
