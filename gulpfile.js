@@ -2,10 +2,14 @@
 var gulp = require('gulp')
 var sass = require('gulp-sass')
 
+var sassOption = {
+  outputStyle : "compact",
+}
+
 // 일반 컴파일
 gulp.task('sass', function () {
   return gulp.src('./scss/*.scss')  // 입력 경로
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass(sassOption).on('error', sass.logError))
     .pipe(gulp.dest('./css'));  // 출력 경로
 });
 
