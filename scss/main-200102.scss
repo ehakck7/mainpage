@@ -52,7 +52,7 @@ html, body{
 .cont-top{
 	position: relative;
 	color: $white;
-	background: url(../images/cont-top-bg.png) no-repeat top center / cover;
+	background: url(../images/cont-top-bg.png) no-repeat 50% 50% / cover;
 	background-color: $orange;	
 	.darkmode &{
 		background-color: $black-222;

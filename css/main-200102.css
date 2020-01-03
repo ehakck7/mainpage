@@ -18,7 +18,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 .f-right { float: right; }
 
 /* header */
-.cont-top { position: relative; color: #fff; background: url(../images/cont-top-bg.png) no-repeat top center/cover; background-color: #e88f0c; }
+.cont-top { position: relative; color: #fff; background: url(../images/cont-top-bg.png) no-repeat 50% 50%/cover; background-color: #e88f0c; }
 
 .darkmode .cont-top { background-color: #222; }
 
