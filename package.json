@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "common setting",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-sass": "^4.0.2",
-    "gulp": "^4.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
