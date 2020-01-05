@@ -9,7 +9,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .wrap.darkmode { color: #fff; background-color: #222; }
 
-.wrap .inner { position: relative; max-width: 1200px; margin: 0 auto; padding: 100px 20px; }
+.wrap .inner { position: relative; max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
 
 .wrap .tit { font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; font-size: 5rem; text-align: center; }
 
@@ -52,6 +52,8 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 /* intro */
 .intro { position: relative; }
 
+.intro .inner { padding: 100px 20px 50px 20px; }
+
 .intro .profile-wrap { position: relative; margin-top: 50px; }
 
 .intro .profile-wrap .profile-img { width: 50%; }
@@ -88,12 +90,12 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .darkmode .intro .bg-eff-box .bg-eff-circle-02:after { background-color: #c3c3c3; }
 
-.intro .bg-eff-skew { position: absolute; bottom: -50px; left: 10%; display: block; width: 90%; height: 100px; background: #e88f0c; }
+.intro .bg-eff-skew { position: absolute; bottom: -80px; left: 10%; display: block; width: 90%; height: 100px; background: #e88f0c; }
 
 .darkmode .intro .bg-eff-skew { background-color: #333; }
 
 /* skill */
-.skill { margin-top: 50px; }
+.skill { margin-top: 130px; }
 
 .skill .skill-list { margin-top: 50px; }
 
