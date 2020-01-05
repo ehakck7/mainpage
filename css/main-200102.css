@@ -5,24 +5,26 @@
 html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size: 62.5%; }
 
 /* common 공통 */
-.wrap { position: relative; min-width: 360px; font-size: 1.6rem; color: #333; }
+.wrap { overflow: hidden; position: relative; min-width: 360px; font-size: 1.6rem; color: #333; }
 
-.wrap.darkmode { color: #fff; }
+.wrap.darkmode { color: #fff; background-color: #222; }
 
-.wrap .inner { position: relative; max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+.wrap .inner { position: relative; max-width: 1200px; margin: 0 auto; padding: 100px 20px; }
 
-.tit { font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; }
+.wrap .tit { font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; font-size: 5rem; text-align: center; }
 
-.f-left { float: left; }
+.wrap .f-left { float: left; }
 
-.f-right { float: right; }
+.wrap .f-right { float: right; }
+
+.bg-eff-box .bg-eff-circle { position: absolute; display: inline-block; border-radius: 42%; }
 
 /* header */
 .cont-top { position: relative; color: #fff; background: url(../images/cont-top-bg.png) no-repeat 50% 50%/cover; background-color: #e88f0c; }
 
-.darkmode .cont-top { background-color: #222; }
+.darkmode .cont-top { background-color: #333; }
 
-.cont-top .inner { padding: 220px 20px 280px 20px; }
+.cont-top .inner { padding: 300px 20px 380px 20px; }
 
 .cont-top .btn-darkmode-wrap { position: absolute; top: 30px; right: 20px; display: inline-block; font-size: 0; }
 
@@ -45,3 +47,99 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 .cont-top .tit-box .txt { font-size: 2rem; }
 
 .cont-top .arrow { position: absolute; bottom: 60px; left: 50%; transform: translate(-50%, 0); }
+
+/* container */
+/* intro */
+.intro { position: relative; }
+
+.intro .profile-wrap { position: relative; margin-top: 50px; }
+
+.intro .profile-wrap .profile-img { width: 50%; }
+
+.intro .profile-wrap .profile-img .profile { position: relative; display: block; width: 70%; height: 0; margin: 0 auto; padding-bottom: 70%; box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7); background: url(../images/profile.png) no-repeat 0 0/100% 100%; }
+
+.intro .profile-wrap .profile-img .profile:after { content: ''; position: absolute; top: 50px; left: -50px; display: inline-block; width: 84px; height: 26px; background: url(../images/bg-eff-wave-01.png) no-repeat 0 0; }
+
+.intro .profile-wrap .profile-info { width: 50%; }
+
+.intro .profile-wrap .profile-info p { padding-left: 15%; font-size: 1.8rem; }
+
+.intro .bg-eff-box .bg-eff-circle-01 { top: 100px; left: -250px; width: 290px; height: 290px; background: #e88f0c; }
+
+.intro .bg-eff-box .bg-eff-circle-01:before { content: ''; position: absolute; top: 0; left: 0; display: inline-block; width: 290px; height: 290px; border-radius: 48%; background: #fcbe62; transform-origin: 50% 42%; opacity: 1; }
+
+.intro .bg-eff-box .bg-eff-circle-01:after { content: ''; position: absolute; top: 0; left: 0; display: inline-block; width: 290px; height: 290px; border-radius: 45%; background: #fcbe62; transform-origin: 50% 45%; opacity: 0.6; }
+
+.intro .bg-eff-box .bg-eff-circle-02 { bottom: 130px; right: -100px; width: 120px; height: 120px; background: #60c4f2; }
+
+.intro .bg-eff-box .bg-eff-circle-02:before { content: ''; position: absolute; top: 0; left: 0; display: inline-block; width: 120px; height: 120px; border-radius: 48%; background: #92ceea; transform-origin: 50% 42%; opacity: 1; }
+
+.intro .bg-eff-box .bg-eff-circle-02:after { content: ''; position: absolute; top: 0; left: 0; display: inline-block; width: 120px; height: 120px; border-radius: 45%; background: #92ceea; transform-origin: 50% 45%; opacity: 0.6; }
+
+.darkmode .intro .bg-eff-box .bg-eff-circle-01 { background: #4e4e4e; }
+
+.darkmode .intro .bg-eff-box .bg-eff-circle-01:before { background-color: #c3c3c3; }
+
+.darkmode .intro .bg-eff-box .bg-eff-circle-01:after { background-color: #c3c3c3; }
+
+.darkmode .intro .bg-eff-box .bg-eff-circle-02 { background: #4e4e4e; }
+
+.darkmode .intro .bg-eff-box .bg-eff-circle-02:before { background-color: #c3c3c3; }
+
+.darkmode .intro .bg-eff-box .bg-eff-circle-02:after { background-color: #c3c3c3; }
+
+.intro .bg-eff-skew { position: absolute; bottom: -50px; left: 10%; display: block; width: 90%; height: 100px; background: #e88f0c; }
+
+.darkmode .intro .bg-eff-skew { background-color: #333; }
+
+/* skill */
+.skill { margin-top: 50px; }
+
+.skill .skill-list { margin-top: 50px; }
+
+.skill .skill-list > li { float: left; width: 50%; height: 200px; padding: 10px; }
+
+.skill .skill-list > li .skill-info dt { font-size: 2.5rem; font-weight: 700; }
+
+.skill .skill-list > li .skill-info dt i { vertical-align: center; margin: 0 0 5px 5px; }
+
+.skill .skill-list > li .skill-info dd .info-list li { position: relative; padding-left: 10px; }
+
+.skill .skill-list > li .skill-info dd .info-list li span { position: absolute; top: 0; left: 0; }
+
+.skill .bg-eff-box .bg-eff-circle-01 { top: 150px; left: -230px; width: 120px; height: 120px; background: #60c4f2; }
+
+.skill .bg-eff-box .bg-eff-circle-01:before { content: ''; position: absolute; top: 0; left: 0; display: inline-block; width: 120px; height: 120px; border-radius: 48%; background: #92ceea; transform-origin: 50% 42%; opacity: 1; }
+
+.skill .bg-eff-box .bg-eff-circle-01:after { content: ''; position: absolute; top: 0; left: 0; display: inline-block; width: 120px; height: 120px; border-radius: 45%; background: #92ceea; transform-origin: 50% 45%; opacity: 0.6; }
+
+.skill .bg-eff-box .bg-eff-circle-02 { bottom: 250px; right: -170px; width: 230px; height: 230px; background: #e88f0c; }
+
+.skill .bg-eff-box .bg-eff-circle-02:before { content: ''; position: absolute; top: 0; left: 0; display: inline-block; width: 230px; height: 230px; border-radius: 48%; background: #fcbe62; transform-origin: 50% 42%; opacity: 1; }
+
+.skill .bg-eff-box .bg-eff-circle-02:after { content: ''; position: absolute; top: 0; left: 0; display: inline-block; width: 230px; height: 230px; border-radius: 45%; background: #fcbe62; transform-origin: 50% 45%; opacity: 0.6; }
+
+.darkmode .skill .bg-eff-box .bg-eff-circle-01 { background: #4e4e4e; }
+
+.darkmode .skill .bg-eff-box .bg-eff-circle-01:before { background-color: #c3c3c3; }
+
+.darkmode .skill .bg-eff-box .bg-eff-circle-01:after { background-color: #c3c3c3; }
+
+.darkmode .skill .bg-eff-box .bg-eff-circle-02 { background: #4e4e4e; }
+
+.darkmode .skill .bg-eff-box .bg-eff-circle-02:before { background-color: #c3c3c3; }
+
+.darkmode .skill .bg-eff-box .bg-eff-circle-02:after { background-color: #c3c3c3; }
+
+/* footer */
+.footer { text-align: center; color: #fff; background: #e88f0c; }
+
+.darkmode .footer { background-color: #333; }
+
+.footer .link-list { margin-top: 30px; }
+
+.footer .link-list li { font-size: 2rem; }
+
+.footer .link-list li i { font-size: 4rem; }
+
+.footer .copy { margin-top: 30px; font-size: 1.5rem; }

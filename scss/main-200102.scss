@@ -23,29 +23,94 @@ html, body{
 
 /* common 공통 */
 .wrap{
+	overflow: hidden;
 	position: relative;
 	min-width: 360px; 
 	font-size: 1.6rem;
-	color: $black-333;
-	
+	color: $black-333;	
 	&.darkmode{
 		color: $white;
+		background-color: $black-222;
+	}
+	.inner{
+		position: relative;
+		max-width: 1200px;
+		margin:0 auto;
+		padding: 100px 20px;
+	}
+	.tit{
+		@include pacifico;
+		font-size: 5rem;
+		text-align: center;
+	}
+	.f-left{
+		float: left;
+	}
+	.f-right{
+		float: right;
 	}
 }
-.wrap .inner{
-	position: relative;
-	max-width: 1200px;
-	margin:0 auto;
-	padding: 30px 20px;
+
+@mixin bg-eff-wave-01{
+	content: ''; 
+	position: absolute; 
+	top: 50px; 
+	left: -50px; 
+	display: inline-block; 
+	width: 84px; 
+	height: 26px; 
+	background: url(../images/bg-eff-wave-01.png) no-repeat 0 0;
 }
-.tit{
-	@include pacifico
+@mixin bg-eff-wave-02{
+	content: ''; 
+	position: absolute; 
+	top: 50px; 
+	left: -50px; 
+	display: inline-block; 
+	width: 84px; 
+	height: 26px; 
+	background: url(../images/bg-eff-wave-02.png) no-repeat 0 0;
 }
-.f-left{
-	float: left;
+@mixin effCircle($w, $h, $br, $bgc, $tro, $op){
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	display: inline-block; 
+	width: $w;
+	height: $h;
+	border-radius: $br;
+	background: $bgc;
+	transform-origin: $tro; 
+	opacity: $op;
 }
-.f-right{
-	float: right;
+@mixin effCircle-dark{
+	.darkmode &{
+		.bg-eff-circle-01{
+			background: $gray-4e;
+			&:before{
+				background-color: $gray-c3;
+			}
+			&:after{
+				background-color: $gray-c3;
+			}
+		}
+		.bg-eff-circle-02{
+			background: $gray-4e;
+			&:before{
+				background-color: $gray-c3;
+			}
+			&:after{
+				background-color: $gray-c3;
+			}
+		}
+	}
+}
+.bg-eff-box{
+	.bg-eff-circle{
+		position: absolute; 
+		display: inline-block; 
+		border-radius: 42%; 
+	}
 }
 
 /* header */
@@ -55,10 +120,10 @@ html, body{
 	background: url(../images/cont-top-bg.png) no-repeat 50% 50% / cover;
 	background-color: $orange;	
 	.darkmode &{
-		background-color: $black-222;
+		background-color: $black-333;
 	}
 	.inner{
-		padding: 220px 20px 280px 20px;
+		padding: 300px 20px 380px 20px;
 	}
 	.btn-darkmode-wrap{
 		position: absolute;
@@ -127,3 +192,174 @@ html, body{
 	}
 }
 
+/* container */
+/* intro */
+.intro{
+	position: relative;
+	.profile-wrap{
+		position: relative;
+		margin-top: 50px;
+		.profile-img{
+			width: 50%;
+			.profile{
+				position: relative;
+				display: block;
+				width: 70%;
+				height: 0;
+				margin: 0 auto;
+				padding-bottom: 70%;
+				box-shadow: 5px 5px 0 rgba(0,0,0,0.7);
+				background: url(../images/profile.png) no-repeat 0 0 / 100% 100%;
+				&:after{
+					@include bg-eff-wave-01;
+				}
+			}
+		}
+		.profile-info{
+			width: 50%;
+			p{
+				padding-left: 15%;
+				font-size: 1.8rem;
+			}
+		}
+	}
+	.bg-eff-box{
+		.bg-eff-circle-01{
+			top: 100px; 
+			left: -250px; 
+			width: 290px; 
+			height: 290px; 
+			background: $orange;
+			&:before{
+				content: ''; 
+				@include effCircle(290px, 290px, 48%, $lightorange, 50% 42%, 1);
+			}
+			&:after{
+				content: ''; 
+				@include effCircle(290px, 290px, 45%, $lightorange, 50% 45%, 0.6);
+			}
+		}
+		.bg-eff-circle-02{
+			bottom: 130px; 
+			right: -100px; 
+			width: 120px; 
+			height: 120px; 
+			background: $blue;
+			&:before{
+				content: ''; 
+				@include effCircle(120px, 120px, 48%, $skyblue, 50% 42%, 1);
+			}
+			&:after{
+				content: ''; 
+				@include effCircle(120px, 120px, 45%, $skyblue, 50% 45%, 0.6);
+			}
+		}
+		@include effCircle-dark;
+	}
+	.bg-eff-skew{
+		position: absolute;
+		bottom: -50px;
+		left: 10%;
+		display: block;
+		width: 90%; 
+		height: 100px; 
+		background: $orange; 
+		.darkmode &{
+			background-color: $black-333;
+		}
+	}
+}
+
+/* skill */
+.skill{
+	margin-top: 50px;
+	.skill-list{
+		margin-top: 50px;
+		> li{
+			float: left;
+			width: 50%;
+			height: 200px;
+			padding: 10px;		
+			.skill-info{
+				dt{
+					font-size: 2.5rem;
+					font-weight: 700;
+					i{
+						vertical-align: center;
+						margin: 0 0 5px 5px;
+					}
+				}
+				dd{
+					.info-list{
+						li{
+							position: relative;
+							padding-left: 10px;
+							span{
+								position: absolute;
+								top: 0;
+								left: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.bg-eff-box{
+		.bg-eff-circle-01{
+			top: 150px; 
+			left: -230px; 
+			width: 120px; 
+			height: 120px; 
+			background: $blue;
+			&:before{
+				content: ''; 
+				@include effCircle(120px, 120px, 48%, $skyblue, 50% 42%, 1);
+			}
+			&:after{
+				content: ''; 
+				@include effCircle(120px, 120px, 45%, $skyblue, 50% 45%, 0.6);
+			}
+		}
+		.bg-eff-circle-02{
+			bottom: 250px; 
+			right: -170px; 
+			width: 230px; 
+			height: 230px; 
+			background: $orange;
+			&:before{
+				content: ''; 
+				@include effCircle(230px, 230px, 48%, $lightorange, 50% 42%, 1);
+			}
+			&:after{
+				content: ''; 
+				@include effCircle(230px, 230px, 45%, $lightorange, 50% 45%, 0.6);
+			}
+		}
+		@include effCircle-dark;
+	}
+}
+
+/* footer */
+.footer{
+	text-align: center;
+	color: $white;
+	background: $orange;
+	.darkmode &{
+		background-color: $black-333;
+	}
+	.link-list{
+		margin-top: 30px;
+		li{
+			font-size: 2rem;
+			i{
+				font-size: 4rem;
+			}
+		}
+	}
+	.copy{
+		margin-top: 30px;
+		font-size: 1.5rem;
+	}
+}

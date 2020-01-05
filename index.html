@@ -27,7 +27,7 @@
 					<!-- <i class="far fa-moon"></i> -->
 					<i class="far fa-sun"></i>
 					<input type="checkbox" id="btn-darkmode" class="btn-darkmode">
-					<label for="btn-darkmode"></label>
+					<label for="btn-darkmode" tabindex="0">다크모드 버튼</label>
 				</div>
 				<div class="tit-box">
 					<h1 class="tit">Portfolio</h1>
@@ -49,7 +49,7 @@
 				</div>
 				<div class="profile-wrap clearfix">
 					<div class="profile-img f-left">
-						<span></span>
+						<span class="profile"></span>
 					</div>
 					<div class="profile-info f-right">
 						<p>
@@ -65,13 +65,12 @@
 						</p>
 					</div>
 				</div>
-				<!-- jquery animate참고 -->
 				<div class="bg-eff-box">
 					<span class="bg-eff-circle bg-eff-circle-01"></span>
 					<span class="bg-eff-circle bg-eff-circle-02"></span>
 				</div>
-				<span class="bg-eff-skew"></span>
 			</div>
+			<span class="bg-eff-skew"></span>
 		</section>
 		<!-- // intro -->
 		<!-- skill -->
@@ -80,15 +79,15 @@
 				<div class="tit-box">
 					<h2 class="tit">“Skill”</h2>
 				</div>
-				<ul class="skill-list">
+				<ul class="skill-list clearfix">
 					<li>
 						<dl class="skill-info">
 							<dt>HTML<i class="fab fa-html5"></i></dt>
 							<dd>
 								<ul class="info-list">
 									<li><span>-</span>HTML4, HTML5 (하드코딩)</li>
-									<li><span>-</span>웹 접근성 관리 가능</li>
-									<li><span>-</span>크로스 브라우징 가능 (IE7+)</li>
+									<li><span>-</span>웹 표준, 웹 접근성, Cross Browsing(IE7+)</li>
+									<li><span>-</span>시멘틱한 마크업</li>
 								</ul>
 							</dd>
 						</dl>
@@ -99,7 +98,8 @@
 							<dd>
 								<ul class="info-list">
 									<li><span>-</span>CSS 1~3 가능</li>
-									<li><span>-</span>반응형 페이지 제작 가능(미디어쿼리)</li>
+									<li><span>-</span>반응형 페이지 제작(미디어쿼리)</li>
+									<li><span>-</span>flex 레이아웃</li>
 								</ul>
 							</dd>
 						</dl>
@@ -109,9 +109,9 @@
 							<dt>JavaScript<i class="fab fa-js-square"></i></dt>
 							<dd>
 								<ul class="info-list">
-									<li><span>-</span>Javascript (기초)</li>
-									<li><span>-</span>슬라이드, 배너, gnb, lnb 제작 가능</li>
-									<li><span>-</span>공지사항 탭 기능 가능</li>
+									<li><span>-</span>ECMAscript 기반 개발</li>
+									<li><span>-</span>알고리즘 제작 가능</li>
+									<li><span>-</span>UI 제작 (slide, dim popup, gnb, lnb 등)</li>
 								</ul>
 							</dd>
 						</dl>
@@ -121,10 +121,8 @@
 							<dt>jQuery<i class="fas fa-code"></i></dt>
 							<dd>
 								<ul class="info-list">
-									<li><span>-</span>gnb, lnb, 검색창 구현가능</li>
-									<li><span>-</span>무한 슬라이드 가능</li>
-									<li><span>-</span>Scroll 액션 가능</li>
-									<li><span>-</span>parallax 액션 가능</li>
+									<li><span>-</span>jquery 관련 라이브러리 가능</li>
+									<li><span>-</span>Scroll, parallax 등 액션 가능</li>
 								</ul>
 							</dd>
 						</dl>
@@ -134,16 +132,31 @@
 							<dt>Etc<i class="fas fa-file-code"></i></dt>
 							<dd>
 								<ul class="info-list">
-									<li><span>-</span>디지털컨버전스 (UI/UX 엔지니어링, 프론트엔드) 양성 과정 수료 - 700시간</li>
+									<li><span>-</span>Git 형상 관리자 (github, gitlab)</li>
+									<li><span>-</span>npm, gulp 버전 관리</li>
 									<li><span>-</span>Photoshop 웹 디자인 가능 (PC, 모바일, 반응형)</li>
 									<li><span>-</span>illustrator (아이콘, 사이트 로고 제작 가능)</li>
 								</ul>
 							</dd>
 						</dl>
 					</li>
+					<li>
+						<dl class="skill-info">
+							<dt>경력<i class="fas fa-file-code"></i></dt>
+							<dd>
+								<ul class="info-list">
+									<li><span>-</span>디지털컨버전스 (UI/UX 엔지니어링, 프론트엔드) 양성 과정 수료 - 700시간</li>
+									<li><span>-</span>에스티유니타스 퍼블리셔(2019.04 ~ 재직중)</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
 				</ul>
+				<div class="bg-eff-box">
+					<span class="bg-eff-circle bg-eff-circle-01"></span>
+					<span class="bg-eff-circle bg-eff-circle-02"></span>
+				</div>
 			</div>
-			<span class="bg-eff-line"></span>
 		</section>
 		<!-- // skill -->
 		<!-- project-wrap -->
@@ -361,7 +374,7 @@
 					</a>
 				</li>
 			</ul>
-			<p class="copy">&copy; Copyright 2019 Mole More All Rights Reserved.</p>
+			<p class="copy">&copy; Copyright 2019 function-dh All Rights Reserved.</p>
 		</div>
 	</footer>
 	<!-- // footer -->

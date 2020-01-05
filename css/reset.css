@@ -14,8 +14,8 @@ input, img, i{vertical-align: middle;}
 button{-webkit-appearance: none; appearance: none; padding: 0; border:0; text-transform: none; cursor:pointer;}
 button > span{position: relative;}
 
-a:link, a:visited{text-decoration: none; color: #333;}
-a:hover, a:active, a:focus{text-decoration: underline; color: #333;} 
+a:link, a:visited{text-decoration: none; color: inherit;}
+a:hover, a:active, a:focus{text-decoration: underline; color: inherit;} 
 .skip{overflow: hidden; visibility: hidden; position: absolute; left: -9999px; width: 1px; height: 1px; font-size: 0; line-height: 0;}
 
 /* skip navigation */

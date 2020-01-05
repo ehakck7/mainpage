@@ -49,7 +49,7 @@
 
 .intro .eff .circle1{display: inline-block; position: absolute; top: 70px; left: 0; width: 290px; height: 290px; border-radius: 42%; background: #fcbe62; transform-origin: 50% 47%; animation: rotate 9s linear infinite;}
 .intro .eff .circle1:before{content: ''; display: inline-block; position: absolute; top: 0; left: 0; width: 290px; height: 290px; border-radius: 48%; background: rgba(252,213,156,0.5); transform-origin: 50% 42%; animation: rotate 8s linear infinite;}
-.intro .eff .circle1:after{content: ''; display: inline-block; position: absolute; top: 0; left: 0; width: 290px; height: 290px; border-radius: 45%; background: #e88f0c; transform-origin: 50% 45%; animation: rotate 10s linear infinite;}
+.intro .eff .circle1:after{content: ''; display: inline-block; position: absolute; top: 0; left: 0; width: 290px; height: 290px; border-radius: 45%; background: #7e7972; transform-origin: 50% 45%; animation: rotate 10s linear infinite;}
 
 .intro .eff .circle2{display: inline-block; position: absolute; bottom: 40%; right: 95px; width: 120px; height: 120px; border-radius: 45%; background-color: #60c4f2; transform-origin: 50% 42%; animation: rotate 8s linear infinite;}
 .intro .eff .circle2:before{content: ''; position: absolute; top: 0; left: 0; display: inline-block; width: 120px; height: 120px; border-radius: 48%; background-color: #92ceea; transform-origin: 50% 45%; animation: rotate 9s linear infinite;}
