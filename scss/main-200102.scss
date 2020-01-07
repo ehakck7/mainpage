@@ -281,7 +281,7 @@ html, body{
 		> li{
 			float: left;
 			width: 50%;
-			height: 200px;
+			min-height: 200px;
 			padding: 10px;		
 			.skill-info{
 				dt{

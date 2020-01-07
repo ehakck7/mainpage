@@ -99,7 +99,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .skill .skill-list { margin-top: 50px; }
 
-.skill .skill-list > li { float: left; width: 50%; height: 200px; padding: 10px; }
+.skill .skill-list > li { float: left; width: 50%; min-height: 200px; padding: 10px; }
 
 .skill .skill-list > li .skill-info dt { font-size: 2.5rem; font-weight: 700; }
 
