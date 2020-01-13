@@ -280,8 +280,9 @@ html, body{
 		margin-top: 50px;
 		> li{
 			float: left;
-			width: 50%;
+			width: 40%;
 			min-height: 200px;
+			margin-left: 10%;
 			padding: 10px;		
 			.skill-info{
 				dt{
@@ -297,6 +298,7 @@ html, body{
 						li{
 							position: relative;
 							padding-left: 10px;
+							word-break: keep-all;
 							span{
 								position: absolute;
 								top: 0;
@@ -344,6 +346,99 @@ html, body{
 	}
 }
 
+/* project */
+.project-list{
+	margin-top: 80px;
+	> li{
+		margin-top: 50px;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+}
+.project-box{
+	.project-img{
+		width: 50%;
+		margin-right: 10%;
+		img{
+			max-width: 100%;
+		}
+	}
+	.project-info{
+		width: 40%;
+		.project-tit{
+			font-size: 3.5rem;
+			font-weight: 700;
+		}
+		.site-info{
+			margin-top: 20px;
+			dt{
+				margin-top: 5px;
+				font-weight: 700;
+				color: $orange;
+				&:first-child{
+					margin-top: 0;
+				}
+				.darkmode &{
+					color: $white
+				}
+			}
+			.site-color{
+				span{
+					display: inline-block;
+					width: 16px;
+					height: 16px;
+					margin-right: 5px;
+					font-size: 0;
+					background: #000; // 임시
+				}
+			}
+		}
+		.site-feature{
+			margin-top: 20px;
+			> li{
+				position: relative;
+				padding-left: 21px;
+				word-break: keep-all;
+				i {
+					position: absolute;
+					top: 5px;
+					left: 0;
+					color: $orange;
+					.darkmode &{
+						color: $gray-c3;
+					}
+				}
+			}
+		}
+		.site-btn{
+			display: block;
+			margin-top: 20px;
+			font-size: 0;
+			a{
+				display: inline-block;
+				margin-left: 10px;
+				padding: 10px 30px;
+				border: 1px solid $orange;
+				border-radius: 5px;
+				box-shadow: 3px 3px 6px $gray-c3;
+				text-align: center;
+				font-size: 1.6rem;
+				font-weight: 700;
+				color: $orange;
+				&:first-child{
+					margin-left: 0;
+				}
+				.darkmode &{
+					border: 1px solid $gray-c3;
+					box-shadow: 3px 3px 6px $gray-4e;
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
 /* footer */
 .footer{
 	text-align: center;
@@ -354,8 +449,17 @@ html, body{
 	}
 	.link-list{
 		margin-top: 30px;
+		font-size: 0;
 		li{
+			display: inline-block;
+			margin-left: 20px;
 			font-size: 2rem;
+			&:first-child{
+				margin-left: 0;
+			}
+			a{
+				display: block;
+			}
 			i{
 				font-size: 4rem;
 			}
