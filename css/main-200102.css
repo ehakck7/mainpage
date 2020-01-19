@@ -30,15 +30,17 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .cont-top .btn-darkmode-wrap i { margin-right: 5px; font-size: 18px; vertical-align: top; }
 
-.cont-top .btn-darkmode-wrap label { position: relative; display: inline-block; width: 45px; height: 20px; padding: 4px; border-radius: 20px; cursor: pointer; background-color: #c3c3c3; }
+.cont-top .btn-darkmode-wrap .btn-wrap { position: relative; display: inline-block; }
 
-.cont-top .btn-darkmode-wrap label:after { content: ''; position: absolute; top: 4px; left: 4px; display: inline-block; width: 12px; height: 12px; border-radius: 50%; background-color: #fff; }
+.cont-top .btn-darkmode-wrap .btn-wrap .btn-darkmode { overflow: hidden; position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; clip: rect(0, 0, 0, 0); }
 
-.cont-top .btn-darkmode-wrap .btn-darkmode { overflow: hidden; position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; clip: rect(0, 0, 0, 0); }
+.cont-top .btn-darkmode-wrap .btn-wrap .btn-darkmode:checked + label { background-color: #fff; }
 
-.cont-top .btn-darkmode-wrap .btn-darkmode:checked + label { background-color: #fff; }
+.cont-top .btn-darkmode-wrap .btn-wrap .btn-darkmode:checked + label + .btn-handle { background-color: #333; }
 
-.cont-top .btn-darkmode-wrap .btn-darkmode:checked + label:after { left: 29px; background-color: #333; }
+.cont-top .btn-darkmode-wrap .btn-wrap label { display: inline-block; width: 45px; height: 20px; padding: 4px; border-radius: 20px; cursor: pointer; background-color: #c3c3c3; }
+
+.cont-top .btn-darkmode-wrap .btn-wrap .btn-handle { position: absolute; top: 4px; left: 4px; display: inline-block; width: 12px; height: 12px; border-radius: 50%; background-color: #fff; }
 
 .cont-top .tit-box { text-align: center; }
 
