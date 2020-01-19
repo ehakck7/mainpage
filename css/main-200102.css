@@ -136,7 +136,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 /* project */
 .project-list { margin-top: 80px; }
 
-.project-list > li { margin-top: 50px; }
+.project-list > li { margin-top: 150px; }
 
 .project-list > li:first-child { margin-top: 0; }
 
@@ -156,7 +156,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .darkmode .project-box .project-info .site-info dt { color: #fff; }
 
-.project-box .project-info .site-info .site-color span { display: inline-block; width: 16px; height: 16px; margin-right: 5px; font-size: 0; background: #000; }
+.project-box .project-info .site-info .site-color span { display: inline-block; width: 16px; height: 16px; margin-right: 5px; font-size: 0; }
 
 .project-box .project-info .site-feature { margin-top: 20px; }
 
@@ -175,7 +175,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 .darkmode .project-box .project-info .site-btn a { border: 1px solid #c3c3c3; box-shadow: 3px 3px 6px #4e4e4e; color: #fff; }
 
 /* footer */
-.footer { text-align: center; color: #fff; background: #e88f0c; }
+.footer { margin-top: 50px; text-align: center; color: #fff; background: #e88f0c; }
 
 .darkmode .footer { background-color: #333; }
 
@@ -187,6 +187,6 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .footer .link-list li a { display: block; }
 
-.footer .link-list li i { font-size: 4rem; }
+.footer .link-list li i { font-size: 3rem; }
 
 .footer .copy { margin-top: 30px; font-size: 1.5rem; }

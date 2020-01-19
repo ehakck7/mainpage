@@ -350,7 +350,7 @@ html, body{
 .project-list{
 	margin-top: 80px;
 	> li{
-		margin-top: 50px;
+		margin-top: 150px;
 		&:first-child{
 			margin-top: 0;
 		}
@@ -440,6 +440,7 @@ html, body{
 
 /* footer */
 .footer{
+	margin-top: 50px;
 	text-align: center;
 	color: $white;
 	background: $orange;
@@ -460,7 +461,7 @@ html, body{
 				display: block;
 			}
 			i{
-				font-size: 4rem;
+				font-size: 3rem;
 			}
 		}
 	}
