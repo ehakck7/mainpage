@@ -1,8 +1,49 @@
 window.onload = function(){
 	var mainIndex = {
 		init : function(){
+			this.darkModeBtn();
+			this.arrowMove();
 			this.colorSet();
 			this.projectImgSet();
+		},
+
+		/* darkModeBtn */
+		darkModeBtn : function(){
+			var wrap = document.querySelector('.wrap')
+			var modeIcon = document.querySelector('.btn-darkmode-wrap .far')
+			var modeBtnWrap = document.querySelector('.btn-darkmode-wrap .btn-wrap')
+			var modeBtn = document.querySelector('.btn-darkmode-wrap .btn-darkmode')
+			var modeHandle = $('.btn-handle')
+			modeBtnWrap.addEventListener('click', function(){
+				if(!modeBtn.checked){
+					modeBtn.checked = true
+					wrap.className = 'wrap darkmode' 
+					modeIcon.className = 'far fa-moon'
+					/* ie9 animation 기능 때문에 jquery 사용 */
+					modeHandle.stop().animate({
+						left : 29
+					}, 200)
+				}else{
+					modeBtn.checked = false
+					wrap.className = 'wrap' 
+					modeIcon.className = 'far fa-sun'
+					modeHandle.stop().animate({
+						left : 4
+					}, 200)
+				}
+			})
+		},
+
+		/* cont-top arrow */
+		arrowMove : function(){
+			var arrow = $('.cont-top .arrow')
+			arrow.animate({
+				bottom : 40
+			}, 700).animate({
+				bottom : 60
+			}, 700, function(){
+				mainIndex.arrowMove()
+			})
 		},
 
 		/* project color set */
