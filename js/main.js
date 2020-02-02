@@ -1,8 +1,9 @@
-window.onload = function(){
+$(function(){
 	var mainIndex = {
 		init : function(){
 			this.darkModeBtn();
 			this.arrowMove();
+			this.bgCircle();
 			this.colorSet();
 			this.projectImgSet();
 		},
@@ -46,6 +47,18 @@ window.onload = function(){
 			})
 		},
 
+		/* bg-eff-circle */
+		bgCircle : function(){
+			var effBox = $('.bg-eff-box span')
+			effBox.animate({
+				rotate : '720deg'
+			}, 5000).animate({
+				rotate : '0deg'
+			}, 5000, function(){
+				mainIndex.bgCircle()
+			})
+		},
+
 		/* project color set */
 		colorSet : function(){
 			var colorSet = document.querySelectorAll('.site-color span')
@@ -71,4 +84,4 @@ window.onload = function(){
 		}
 	}
 	mainIndex.init()
-}
+})
