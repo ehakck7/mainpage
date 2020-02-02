@@ -228,6 +228,15 @@ html, body{
 		}
 	}
 	.bg-eff-box{
+		&.active{
+			span{
+				-webkit-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+		}
 		.bg-eff-circle-01{
 			top: 100px; 
 			left: -250px; 
@@ -237,10 +246,12 @@ html, body{
 			&:before{
 				content: ''; 
 				@include effCircle(290px, 290px, 48%, $lightorange, 50% 42%, 1);
+				transform-origin : 45% 50%;
 			}
 			&:after{
 				content: ''; 
 				@include effCircle(290px, 290px, 45%, $lightorange, 50% 45%, 0.6);
+				transform-origin : 52% 43%;
 			}
 		}
 		.bg-eff-circle-02{
@@ -252,10 +263,12 @@ html, body{
 			&:before{
 				content: ''; 
 				@include effCircle(120px, 120px, 48%, $skyblue, 50% 42%, 1);
+				transform-origin : 45% 50%;
 			}
 			&:after{
 				content: ''; 
 				@include effCircle(120px, 120px, 45%, $skyblue, 50% 45%, 0.6);
+				transform-origin : 52% 43%;
 			}
 		}
 		@include effCircle-dark;
