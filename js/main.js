@@ -3,7 +3,8 @@ $(function(){
 		init : function(){
 			this.darkModeBtn();
 			this.arrowMove();
-			this.bgCircle();
+			this.bgCircle_fast();
+			this.bgCircle_slow();
 			this.colorSet();
 			this.projectImgSet();
 		},
@@ -48,14 +49,24 @@ $(function(){
 		},
 
 		/* bg-eff-circle */
-		bgCircle : function(){
-			var effBox = $('.bg-eff-box span')
+		bgCircle_fast : function(){
+			var effBox = $('.bg-eff-box .bg-eff-circle-01')
 			effBox.animate({
 				rotate : '720deg'
 			}, 5000).animate({
 				rotate : '0deg'
-			}, 5000, function(){
-				mainIndex.bgCircle()
+			}, 5500, function(){
+				mainIndex.bgCircle_fast()
+			})
+		},
+		bgCircle_slow : function(){
+			var effBox = $('.bg-eff-box .bg-eff-circle-02')
+			effBox.animate({
+				rotate : '720deg'
+			}, 7000).animate({
+				rotate : '0deg'
+			}, 8000, function(){
+				mainIndex.bgCircle_slow()
 			})
 		},
 
