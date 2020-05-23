@@ -48,7 +48,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .wrap.darkmode { color: #fff; background-color: #222; }
 
-.wrap .inner { position: relative; max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+.wrap .inner { position: relative; max-width: 1200px; margin: 0 auto; padding: 5% 20px; }
 
 .wrap .tit { font-family: 'Pacifico', cursive, '돋움', dotum, sans-serif; font-size: 5rem; text-align: center; }
 
@@ -63,7 +63,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .darkmode .cont-top { background-color: #333; }
 
-.cont-top .inner { padding: 300px 20px 380px 20px; }
+.cont-top .inner { padding: 20% 20px 25% 20px; }
 
 .cont-top .btn-darkmode-wrap { position: absolute; top: 30px; right: 20px; display: inline-block; font-size: 0; }
 
@@ -93,9 +93,9 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 /* intro */
 .intro { position: relative; }
 
-.intro .inner { padding: 100px 20px 50px 20px; }
+.intro .inner { padding: 10% 20px 7% 20px; }
 
-.intro .profile-wrap { position: relative; margin-top: 50px; }
+.intro .profile-wrap { position: relative; margin-top: 5%; }
 
 .intro .profile-wrap .profile-img { width: 50%; }
 
@@ -142,7 +142,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .skill .skill-list { margin-top: 50px; }
 
-.skill .skill-list > li { float: left; width: 40%; min-height: 200px; margin-left: 10%; padding: 10px; }
+.skill .skill-list > li { float: left; width: 40%; min-height: 200px; margin-left: 10%; }
 
 .skill .skill-list > li .skill-info dt { font-size: 2.5rem; font-weight: 700; }
 
@@ -193,13 +193,13 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .project-box .project-info .site-info { margin-top: 20px; }
 
-.project-box .project-info .site-info dt { margin-top: 5px; font-weight: 700; color: #e88f0c; }
+.project-box .project-info .site-info dt { margin-top: 15px; font-weight: 700; color: #e88f0c; }
 
 .project-box .project-info .site-info dt:first-child { margin-top: 0; }
 
 .darkmode .project-box .project-info .site-info dt { color: #fff; }
 
-.project-box .project-info .site-info .site-color span { display: inline-block; width: 24px; height: 24px; margin-right: 5px; font-size: 0; vertical-align: top; }
+.project-box .project-info .site-info .site-color span { display: inline-block; width: 24px; height: 24px; margin-right: 5px; font-size: 0; }
 
 .project-box .project-info .site-feature { margin-top: 20px; }
 
@@ -211,7 +211,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .project-box .project-info .site-btn { display: block; margin-top: 20px; font-size: 0; }
 
-.project-box .project-info .site-btn a { display: inline-block; margin-left: 10px; padding: 10px 30px; border: 1px solid #e88f0c; border-radius: 5px; box-shadow: 3px 3px 6px #c3c3c3; text-align: center; font-size: 1.6rem; font-weight: 700; color: #e88f0c; }
+.project-box .project-info .site-btn a { display: inline-block; width: 48.5%; margin-left: 3%; padding: 10px 30px; border: 1px solid #e88f0c; border-radius: 5px; box-shadow: 3px 3px 6px #c3c3c3; text-align: center; font-size: 1.6rem; font-weight: 700; color: #e88f0c; }
 
 .project-box .project-info .site-btn a:first-child { margin-left: 0; }
 
@@ -233,3 +233,42 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 .footer .link-list li i { font-size: 3rem; }
 
 .footer .copy { margin-top: 30px; font-size: 1.5rem; }
+
+@media screen and (max-width: 768px) { .project-box .project-info .site-btn { display: block; margin-top: 20px; font-size: 0; }
+  .project-box .project-info .site-btn a { display: block; width: 100%; margin: 0 auto; box-shadow: none; }
+  .project-box .project-info .site-btn a:nth-child(n+2) { margin-top: 5px; } }
+
+@media screen and (max-width: 640px) { /* common 공통 */
+  html, body { font-size: 47%; }
+  .wrap .inner { padding: 15% 6.25% 15% 6.25%; }
+  .wrap .tit { font-size: 4.5rem; }
+  .bg-eff-box { display: none; }
+  /* header */
+  .cont-top .inner { padding: 50% 6.25% 55% 6.25%; }
+  .cont-top .tit-box .tit { font-size: 8rem; }
+  /* intro */
+  .intro .profile-wrap .profile-img { width: 100%; }
+  .intro .profile-wrap .profile-info { width: 100%; margin-top: 10%; }
+  .intro .profile-wrap .profile-info p { padding-left: 15%; font-size: 1.8rem; }
+  .intro .bg-eff-skew { bottom: -5%; left: 10%; height: 50px; }
+  /* skill */
+  .skill { margin-top: 0; }
+  .skill .skill-list { margin-top: 5%; }
+  .skill .skill-list > li { float: left; width: 100%; min-height: auto; margin: 5% 0 0 5%; }
+  /* project */
+  .project-list { margin-top: 8%; }
+  .project-list > li { margin-top: 15%; }
+  .project-box .project-img { width: 100%; margin-right: 0; }
+  .project-box .project-info { width: 100%; margin-top: 8%; }
+  .project-box .project-info .site-info { margin-top: 4%; }
+  .project-box .project-info .site-info dt { margin-top: 3%; }
+  .project-box .project-info .site-feature { margin-top: 8%; }
+  /* footer */
+  .footer { margin-top: 0; }
+  .footer .inner { padding: 10% 6.25%; }
+  .footer .link-list { margin-top: 5%; }
+  .footer .link-list li { display: inline-block; margin-left: 20px; font-size: 2rem; }
+  .footer .link-list li:first-child { margin-left: 0; }
+  .footer .link-list li a { display: block; }
+  .footer .link-list li i { font-size: 5rem; }
+  .footer .copy { margin-top: 5%; } }
