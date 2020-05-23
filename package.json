@@ -1,14 +1,13 @@
 {
   "name": "function-dh.github.io",
   "version": "1.0.0",
-  "description": "common setting",
+  "description": "setting",
   "main": "gulpfile.js",
-  "dependencies": {},
-  "devDependencies": {
-    "eslint": "^6.8.0",
+  "dependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/function-dh/function-dh.github.io.git"
   },
-  "author": "",
+  "author": "function_dh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/function-dh/function-dh.github.io/issues"
