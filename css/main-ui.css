@@ -199,6 +199,10 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .darkmode .project-box .project-info .site-info dt { color: #fff; }
 
+.darkmode .project-box .project-info .site-info dd { color: #c3c3c3; }
+
+.project-box .project-info .site-info .site-link a { text-decoration: underline; }
+
 .project-box .project-info .site-info .site-color span { display: inline-block; width: 24px; height: 24px; margin-right: 5px; font-size: 0; }
 
 .project-box .project-info .site-feature { margin-top: 20px; }
@@ -232,6 +236,10 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
 
 .footer .link-list li i { font-size: 3rem; }
 
+.footer address { margin-top: 30px; }
+
+.footer address i { margin-right: 5px; font-size: 2rem; }
+
 .footer .copy { margin-top: 30px; font-size: 1.5rem; }
 
 @media screen and (max-width: 768px) { .project-box .project-info .site-btn { display: block; margin-top: 20px; font-size: 0; }
@@ -244,6 +252,7 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
   .wrap .tit { font-size: 4.5rem; }
   .bg-eff-box { display: none; }
   /* header */
+  .cont-top { background: url(../images/cont-top-bg-m.png) no-repeat 50% 50%/cover; background-color: #e88f0c; }
   .cont-top .inner { padding: 50% 6.25% 55% 6.25%; }
   .cont-top .tit-box .tit { font-size: 8rem; }
   /* intro */
@@ -271,4 +280,5 @@ html, body { font-family: 'Noto Sans KR', '돋움', dotum, sans-serif; font-size
   .footer .link-list li:first-child { margin-left: 0; }
   .footer .link-list li a { display: block; }
   .footer .link-list li i { font-size: 5rem; }
+  .footer address { margin-top: 5%; }
   .footer .copy { margin-top: 5%; } }

@@ -405,6 +405,16 @@ html, body{
 					color: $white
 				}
 			}
+			dd{
+				.darkmode &{
+					color: $gray-c3
+				}
+			}
+			.site-link{
+				a{
+					text-decoration: underline;
+				}
+			}
 			.site-color{
 				span{
 					display: inline-block;
@@ -488,6 +498,13 @@ html, body{
 			}
 		}
 	}
+	address{
+		margin-top: 30px;
+		i{
+			margin-right: 5px;
+			font-size: 2rem;
+		}
+	}
 	.copy{
 		margin-top: 30px;
 		font-size: 1.5rem;
@@ -537,6 +554,8 @@ html, body{
 
 	/* header */
 	.cont-top{
+		background: url(../images/cont-top-bg-m.png) no-repeat 50% 50% / cover;
+		background-color: $orange;
 		.inner{
 			padding: 50% 6.25% 55% 6.25%;
 		}
@@ -633,6 +652,9 @@ html, body{
 					font-size: 5rem;
 				}
 			}
+		}
+		address{
+			margin-top: 5%;
 		}
 		.copy{
 			margin-top: 5%;
